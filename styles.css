@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right top, #ff6cc6, #f47ac1, #e886bd, #db90b9, #ce9ab5, #b78fa3, #a08491, #897980, #655a5e, #443c3f, #242122, #000000);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.club-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+}
+
+.club-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px #aaa;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.club-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.club-card h3 {
+    text-align: center;
+    color: #333;
+}
+
+.club-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+#club-poto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.poto-container {
+    flex: 1;
+    max-width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poto-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.notes {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.notes p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
